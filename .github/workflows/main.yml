@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: yousiki/PKUAutoSubmit-action@master
         with:
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
-          reason: ${{ secrets.reason }}
-          wechat: "False"
-          sckey: ${{ secrets.sckey }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          reason: ${{ secrets.REASON }}
+          wechat: "True"
+          sckey: ${{ secrets.SCKEY }}
