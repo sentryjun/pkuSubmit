@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [master]
   schedule:
-    - cron: "25 2 * * *"
-    - cron: "45 4 * * *"
+    - cron: "30 13 * * *"
+    - cron: "00 4 * * *"
   workflow_dispatch:
 
 jobs:
@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
           reason: ${{ secrets.reason }}
-          wechat: "True"
+          wechat: "False"
           sckey: ${{ secrets.sckey }}
